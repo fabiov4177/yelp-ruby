@@ -1,4 +1,4 @@
-gem 'yelp', require: 'yelp'
+require: 'yelp'
 client = Yelp::Client.new({ consumer_key: h4mLLSpqcu9MYMZa5zWXsw,
                             consumer_secret: jimsWA43khM7pPrOVwj_XIvdLwE,
                             token: koj9-i4gzH-tV8tRwuTbjaGoGbXnuQ_1,
@@ -23,7 +23,7 @@ Yelp.client.search('San Francisco', { term: 'food' })
 client.search('San Francisco')
 
 params = { term: 'food',
-           limit: 3,
+           limit: 5,
            category_filter: 'discgolf'
          }
 
